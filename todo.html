@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" />
+        <script src="script.js"></script>
+    </head>
+    <body onload="reloadData()">
+        <div id="myDIV" class="header">
+            <h2 style="margin:5px">ToDo List</h2>
+            <input type="text" id="myInput" placeholder="Title...">
+            <span onclick="addTask()" class="addBtn">Add</span>
+        </div>
+          
+        <ul id="myUL"></ul>
+        <div>
+            <input type="button" value="All Tasks Done" id="removeAll" onclick="removeAllItems()">
+        </div>
+        
+    </body>
